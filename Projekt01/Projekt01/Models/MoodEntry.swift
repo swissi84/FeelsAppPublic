@@ -16,23 +16,19 @@ class MoodEntry: Identifiable {
     var date: Date
     var moodPicture: String = ""
     
-    @Relationship(deleteRule: .nullify, inverse: \User.moodEntries)
-    var users: [User] = []
+//    @Relationship(deleteRule: .nullify, inverse: \User.moodEntries)
+//    var user: User
+//    
+    //    @Relationship(deleteRule: .nullify, inverse: \MoodFactor.moodEntries)
+    //    var moodfactors: [MoodFactor] = []
     
-    @Relationship(deleteRule: .nullify, inverse: \MoodFactor.moodEntries)
-    var moodfactors: [MoodFactor] = []
-    
-    init(id: UUID, titel: String, mood: Double, date: Date, moodPicture: String, users: [User], moodfactors: [MoodFactor]) {
+    init(id: UUID, titel: String, mood: Double, date: Date, moodPicture: String) {
         self.id = id
         self.titel = titel
         self.mood = mood
         self.date = date
         self.moodPicture = moodPicture
-        self.users = users
-        self.moodfactors = moodfactors
     }
-    
 }
-
 
 

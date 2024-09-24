@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654E26682CA2DBD9007D313B /* SelectMoodFactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E26672CA2DBD9007D313B /* SelectMoodFactorView.swift */; };
+		654E266A2CA2E52A007D313B /* MoodEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E26692CA2E52A007D313B /* MoodEntryView.swift */; };
+		654E266C2CA2E687007D313B /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E266B2CA2E687007D313B /* EntryDetailView.swift */; };
+		654E266E2CA2EC1E007D313B /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E266D2CA2EC1E007D313B /* EntryListView.swift */; };
 		657BF6672CA15BFC0035AA7A /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6662CA15BFC0035AA7A /* MoodEntry.swift */; };
 		657BF6692CA15FDF0035AA7A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6682CA15FDF0035AA7A /* User.swift */; };
 		657BF66B2CA161D50035AA7A /* MoodFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF66A2CA161D50035AA7A /* MoodFactor.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		654E26672CA2DBD9007D313B /* SelectMoodFactorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMoodFactorView.swift; sourceTree = "<group>"; };
+		654E26692CA2E52A007D313B /* MoodEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryView.swift; sourceTree = "<group>"; };
+		654E266B2CA2E687007D313B /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
+		654E266D2CA2EC1E007D313B /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
 		657BF6642CA15B840035AA7A /* Assignment.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Assignment.md; sourceTree = "<group>"; };
 		657BF6662CA15BFC0035AA7A /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
 		657BF6682CA15FDF0035AA7A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -59,6 +67,10 @@
 				657BF6722CA18D940035AA7A /* LoginView.swift */,
 				657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */,
 				65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */,
+				654E26672CA2DBD9007D313B /* SelectMoodFactorView.swift */,
+				654E26692CA2E52A007D313B /* MoodEntryView.swift */,
+				654E266B2CA2E687007D313B /* EntryDetailView.swift */,
+				654E266D2CA2EC1E007D313B /* EntryListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,11 +200,15 @@
 				657BF66B2CA161D50035AA7A /* MoodFactor.swift in Sources */,
 				657BF6732CA18D940035AA7A /* LoginView.swift in Sources */,
 				657BF66F2CA167AF0035AA7A /* Weather.swift in Sources */,
+				654E266A2CA2E52A007D313B /* MoodEntryView.swift in Sources */,
 				657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */,
 				657BF66D2CA162780035AA7A /* ProfilView.swift in Sources */,
 				960D84C32C9DABC800FB82F1 /* ContentView.swift in Sources */,
+				654E266C2CA2E687007D313B /* EntryDetailView.swift in Sources */,
 				960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */,
+				654E26682CA2DBD9007D313B /* SelectMoodFactorView.swift in Sources */,
 				657BF6672CA15BFC0035AA7A /* MoodEntry.swift in Sources */,
+				654E266E2CA2EC1E007D313B /* EntryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

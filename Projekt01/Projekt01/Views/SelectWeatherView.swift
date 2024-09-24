@@ -18,7 +18,8 @@ struct SelectWeatherView: View {
                         toggleSelection(weather)
                     }) {
                         Text(weather.rawValue)
-                            .padding()
+                            .font(.footnote)
+                            .padding(5)
                             .background(selectedWeather.contains(weather) ? Color.blue : Color.gray)
                             .foregroundColor(.white)
                             .cornerRadius(10)

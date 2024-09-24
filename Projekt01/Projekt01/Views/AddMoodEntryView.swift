@@ -9,6 +9,8 @@ import SwiftUI
 import SwiftData
 
 struct AddMoodEntryView: View {
+    @Environment(\.modelContext) var context
+    
     @State private var title: String = ""
     @State private var mood: Double = 0.5
     @State private var reasonForGratitude: String = ""
@@ -17,10 +19,16 @@ struct AddMoodEntryView: View {
     
     @State private var selectedEmoji: String = "😎"
     let emojis: [String] = ["😃", "😡", "🥶"]
-   
+    
+    
+    var username: String = "Default User"
+    
+    
+    
     var body: some View {
-        VStack() {
-            List{
+        NavigationStack{
+            VStack {
+                Text("Wie geht es dir heute?")
                 TextField("Ein Wort für Deine Stimmung", text: $title)
                     .padding()
                 HStack {
@@ -42,33 +50,40 @@ struct AddMoodEntryView: View {
                             .font(.largeTitle)
                     }
                 })
-                HStack {
+                VStack {
                     Spacer()
                     Text("Stimmung: \(String(format: "%.1f", mood))")
                     Spacer()
                     
-                }
-                Text("Stimmungs Faktor")
-                TextField("Stimmungs Faktor", text: $factor)
-                
-                Picker("Wähle ein Emoji",selection: $selectedEmoji) {
-                    ForEach(emojis, id: \.self ) { emoji in
-                        Text(emoji).tag(emoji)
+                    Divider()
+                        .padding()
+                    Text("Stimmungs Faktoren:")
+                    SelectMoodFactorView()
+                    HStack{
+                        
+                        Picker("Wähle ein Emoji",selection: $selectedEmoji) {
+                            ForEach(emojis, id: \.self ) { emoji in
+                                Text(emoji).tag(emoji)
+                                    .pickerStyle(SegmentedPickerStyle())
+                                    .font(.largeTitle)
+                            }
+                        }
+                        Spacer()
+                        Text("\(selectedEmoji)")
+                            .font(.largeTitle)
                     }
-                   
-                    .pickerStyle(WheelPickerStyle())
-                    Text("\(selectedEmoji)")
                 }
                 
                 VStack{
-                    Text("Wähle deine Wetter Faktoren:")
                     
+                    Text("Wetter Faktoren:")
                     SelectWeatherView()
+                    
                     
                     VStack {
                         Text("Für was bist du gerade Dankbar?")
                         TextEditor(text: $text)
-                            .frame(height: 100)
+                            .frame(height: 50)
                             .padding()
                             .background(Color.gray.opacity(0.1))
                             .cornerRadius(10)
@@ -78,16 +93,35 @@ struct AddMoodEntryView: View {
                     }
                     Spacer()
                 }
+                
+                
+                Button("Speichern", systemImage: "square.and.arrow.down") {
+                    let newEntry = MoodEntry(
+                                id: UUID(),
+                                titel: title,
+                                mood: mood,
+                                date: Date(),
+                                moodPicture: selectedEmoji
+                                )
+                            
+                    context.insert(newEntry)
+                            
+                        
+                           
+                        }
+                
             }
+            .padding(40)
+            .navigationTitle("Feels")
+            .navigationBarTitleDisplayMode(.inline)
+            Spacer()
         }
-            Button("Speichern", systemImage: "square.and.arrow.down") {
-            
-            
-        }
+        
     }
 }
+
 #Preview {
-AddMoodEntryView()
+    AddMoodEntryView()
 }
 
 

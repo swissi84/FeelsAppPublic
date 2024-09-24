@@ -24,9 +24,15 @@ struct Projekt01App: App {
                             Label("Home", systemImage: "house")
                         }
                     
+                    EntryListView()
+                        .tabItem {
+                            Label("Einträge", systemImage: "list.bullet.clipboard")
+                        }
+                    
+                    
                     AddMoodEntryView()
                         .tabItem {
-                            Label("Eintrag erstellen", systemImage: "list.bullet.clipboard")
+                            Label("Eintrag erstellen", systemImage: "square.and.pencil")
                         }
                     
                     ProfilView()
@@ -34,7 +40,11 @@ struct Projekt01App: App {
                             Label("Profile", systemImage: "person.circle")
                         }
                     
-                   }
+                }
+                .modelContainer(for: [
+                    MoodEntry.self,
+                    ])
+                
             } else {
                 LoginView()
             }

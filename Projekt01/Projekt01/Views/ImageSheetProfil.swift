@@ -33,7 +33,7 @@ struct ImageSheetProfil: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
-                                .cornerRadius(50)
+                                .cornerRadius(180)
                                 .onTapGesture {
                                     selectedImage = image
                                 }
