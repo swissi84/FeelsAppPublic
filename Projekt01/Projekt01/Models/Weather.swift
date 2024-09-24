@@ -8,7 +8,7 @@
 import Foundation
 
 
-enum Weather: String {
+enum Weather: String, CaseIterable, Identifiable {
     case sunny = "Sonnig"
     case rainy = "Regnerisch"
     case cloudy = "Bewölkt"
@@ -16,4 +16,7 @@ enum Weather: String {
     case snow = "Schnee"
     case stormy = "Stürmisch"
     case hot = "Heiss"
+    
+    var id: String { self.rawValue }
 }
+

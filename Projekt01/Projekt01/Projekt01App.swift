@@ -24,7 +24,7 @@ struct Projekt01App: App {
                             Label("Home", systemImage: "house")
                         }
                     
-                    addMoodView()
+                    AddMoodEntryView()
                         .tabItem {
                             Label("Eintrag erstellen", systemImage: "list.bullet.clipboard")
                         }

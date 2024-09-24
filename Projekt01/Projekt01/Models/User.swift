@@ -8,12 +8,12 @@
 import Foundation
 import SwiftData
 
-
+@Model
 class User: Identifiable {
-    let id: UUID
+    var id: UUID
     var username: String
     var email: String
-    let birthday: Date
+    var birthday: Date
     var location: String
     var darkMode: Bool
     var profilImage: String

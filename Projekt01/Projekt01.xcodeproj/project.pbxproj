@@ -14,7 +14,8 @@
 		657BF66F2CA167AF0035AA7A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF66E2CA167AE0035AA7A /* Weather.swift */; };
 		657BF6712CA17B480035AA7A /* ImageSheetProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6702CA17B480035AA7A /* ImageSheetProfil.swift */; };
 		657BF6732CA18D940035AA7A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6722CA18D940035AA7A /* LoginView.swift */; };
-		657BF6752CA1953F0035AA7A /* addMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6742CA1953F0035AA7A /* addMoodView.swift */; };
+		657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */; };
+		65C38E6B2CA2B71C0063104E /* SelectWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */; };
 		960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C02C9DABC800FB82F1 /* Projekt01App.swift */; };
 		960D84C32C9DABC800FB82F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C22C9DABC800FB82F1 /* ContentView.swift */; };
 		960D84C52C9DABCA00FB82F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960D84C42C9DABCA00FB82F1 /* Assets.xcassets */; };
@@ -30,7 +31,8 @@
 		657BF66E2CA167AE0035AA7A /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		657BF6702CA17B480035AA7A /* ImageSheetProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSheetProfil.swift; sourceTree = "<group>"; };
 		657BF6722CA18D940035AA7A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		657BF6742CA1953F0035AA7A /* addMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMoodView.swift; sourceTree = "<group>"; };
+		657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodEntryView.swift; sourceTree = "<group>"; };
+		65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeatherView.swift; sourceTree = "<group>"; };
 		960D84BD2C9DABC800FB82F1 /* Projekt01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projekt01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960D84C02C9DABC800FB82F1 /* Projekt01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projekt01App.swift; sourceTree = "<group>"; };
 		960D84C22C9DABC800FB82F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +57,8 @@
 				657BF66C2CA162780035AA7A /* ProfilView.swift */,
 				657BF6702CA17B480035AA7A /* ImageSheetProfil.swift */,
 				657BF6722CA18D940035AA7A /* LoginView.swift */,
-				657BF6742CA1953F0035AA7A /* addMoodView.swift */,
+				657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */,
+				65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,11 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				657BF6692CA15FDF0035AA7A /* User.swift in Sources */,
+				65C38E6B2CA2B71C0063104E /* SelectWeatherView.swift in Sources */,
 				657BF6712CA17B480035AA7A /* ImageSheetProfil.swift in Sources */,
 				657BF66B2CA161D50035AA7A /* MoodFactor.swift in Sources */,
 				657BF6732CA18D940035AA7A /* LoginView.swift in Sources */,
 				657BF66F2CA167AF0035AA7A /* Weather.swift in Sources */,
-				657BF6752CA1953F0035AA7A /* addMoodView.swift in Sources */,
+				657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */,
 				657BF66D2CA162780035AA7A /* ProfilView.swift in Sources */,
 				960D84C32C9DABC800FB82F1 /* ContentView.swift in Sources */,
 				960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */,
@@ -330,6 +334,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,9 +342,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.syntaxinstitut.Projekt01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,9 +376,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.syntaxinstitut.Projekt01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

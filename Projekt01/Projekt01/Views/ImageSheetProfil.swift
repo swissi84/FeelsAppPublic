@@ -11,7 +11,7 @@ struct ImageSheetProfil: View {
     @Binding var selectedImage: String
     @Binding var showImageSheet : Bool
     
-    let availableImages = ["profil", "image1", "image2", "image3", "image4"] // Verfügbare Bilder
+    let availableImages = ["profil", "image1", "image2", "image3", "image4", "image5", "image6", "image7"] // Verfügbare Bilder
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
