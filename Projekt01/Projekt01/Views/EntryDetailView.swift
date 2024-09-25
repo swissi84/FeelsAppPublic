@@ -70,6 +70,7 @@ struct EntryDetailView: View {
                 .padding()
             }
             .navigationTitle("Detailansicht")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

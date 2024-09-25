@@ -20,6 +20,7 @@
 		657BF6732CA18D940035AA7A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6722CA18D940035AA7A /* LoginView.swift */; };
 		657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */; };
 		65C38E6B2CA2B71C0063104E /* SelectWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */; };
+		65DB7EC72CA443B700716AFB /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB7EC62CA443B700716AFB /* Emoji.swift */; };
 		960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C02C9DABC800FB82F1 /* Projekt01App.swift */; };
 		960D84C32C9DABC800FB82F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C22C9DABC800FB82F1 /* HomeView.swift */; };
 		960D84C52C9DABCA00FB82F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960D84C42C9DABCA00FB82F1 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		657BF6722CA18D940035AA7A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodEntryView.swift; sourceTree = "<group>"; };
 		65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeatherView.swift; sourceTree = "<group>"; };
+		65DB7EC62CA443B700716AFB /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		960D84BD2C9DABC800FB82F1 /* Projekt01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projekt01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960D84C02C9DABC800FB82F1 /* Projekt01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projekt01App.swift; sourceTree = "<group>"; };
 		960D84C22C9DABC800FB82F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				657BF6662CA15BFC0035AA7A /* MoodEntry.swift */,
 				657BF66A2CA161D50035AA7A /* MoodFactor.swift */,
 				657BF66E2CA167AE0035AA7A /* Weather.swift */,
+				65DB7EC62CA443B700716AFB /* Emoji.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */,
 				657BF66D2CA162780035AA7A /* ProfilView.swift in Sources */,
 				960D84C32C9DABC800FB82F1 /* HomeView.swift in Sources */,
+				65DB7EC72CA443B700716AFB /* Emoji.swift in Sources */,
 				654E266C2CA2E687007D313B /* EntryDetailView.swift in Sources */,
 				960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */,
 				654E26682CA2DBD9007D313B /* SelectMoodFactorView.swift in Sources */,
