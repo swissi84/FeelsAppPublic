@@ -10,25 +10,27 @@ import SwiftData
 
 @Model
 class MoodEntry: Identifiable {
-    var id: UUID
+    var id: UUID = UUID()
     var titel: String
     var mood: Double
     var date: Date
-    var moodPicture: String = ""
+    var moodPicture: String
+    var selectedWeather: String
+    var text: String
     
-//    @Relationship(deleteRule: .nullify, inverse: \User.moodEntries)
-//    var user: User
-//    
-    //    @Relationship(deleteRule: .nullify, inverse: \MoodFactor.moodEntries)
-    //    var moodfactors: [MoodFactor] = []
+    @Relationship(deleteRule: .nullify, inverse: \MoodFactor.moodFactors)
+    var moodfactors: [MoodFactor]
     
-    init(id: UUID, titel: String, mood: Double, date: Date, moodPicture: String) {
-        self.id = id
+    init(titel: String, mood: Double, date: Date, moodPicture: String, selectedWeather: String, text: String, moodfactors: [MoodFactor]) {
         self.titel = titel
         self.mood = mood
         self.date = date
         self.moodPicture = moodPicture
+        self.selectedWeather = selectedWeather
+        self.text = text
+        self.moodfactors = moodfactors
     }
+   
 }
 
 

@@ -21,7 +21,7 @@
 		657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657BF6742CA1953F0035AA7A /* AddMoodEntryView.swift */; };
 		65C38E6B2CA2B71C0063104E /* SelectWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */; };
 		960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C02C9DABC800FB82F1 /* Projekt01App.swift */; };
-		960D84C32C9DABC800FB82F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C22C9DABC800FB82F1 /* ContentView.swift */; };
+		960D84C32C9DABC800FB82F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960D84C22C9DABC800FB82F1 /* HomeView.swift */; };
 		960D84C52C9DABCA00FB82F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960D84C42C9DABCA00FB82F1 /* Assets.xcassets */; };
 		960D84C82C9DABCA00FB82F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960D84C72C9DABCA00FB82F1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -43,7 +43,7 @@
 		65C38E6A2CA2B71C0063104E /* SelectWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeatherView.swift; sourceTree = "<group>"; };
 		960D84BD2C9DABC800FB82F1 /* Projekt01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projekt01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960D84C02C9DABC800FB82F1 /* Projekt01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projekt01App.swift; sourceTree = "<group>"; };
-		960D84C22C9DABC800FB82F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		960D84C22C9DABC800FB82F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		960D84C42C9DABCA00FB82F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960D84C72C9DABCA00FB82F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +108,7 @@
 				657BF6652CA15BE20035AA7A /* Models */,
 				657BF6632CA159D20035AA7A /* Views */,
 				657BF6642CA15B840035AA7A /* Assignment.md */,
-				960D84C22C9DABC800FB82F1 /* ContentView.swift */,
+				960D84C22C9DABC800FB82F1 /* HomeView.swift */,
 				960D84C02C9DABC800FB82F1 /* Projekt01App.swift */,
 				960D84C42C9DABCA00FB82F1 /* Assets.xcassets */,
 				960D84C62C9DABCA00FB82F1 /* Preview Content */,
@@ -203,7 +203,7 @@
 				654E266A2CA2E52A007D313B /* MoodEntryView.swift in Sources */,
 				657BF6752CA1953F0035AA7A /* AddMoodEntryView.swift in Sources */,
 				657BF66D2CA162780035AA7A /* ProfilView.swift in Sources */,
-				960D84C32C9DABC800FB82F1 /* ContentView.swift in Sources */,
+				960D84C32C9DABC800FB82F1 /* HomeView.swift in Sources */,
 				654E266C2CA2E687007D313B /* EntryDetailView.swift in Sources */,
 				960D84C12C9DABC800FB82F1 /* Projekt01App.swift in Sources */,
 				654E26682CA2DBD9007D313B /* SelectMoodFactorView.swift in Sources */,

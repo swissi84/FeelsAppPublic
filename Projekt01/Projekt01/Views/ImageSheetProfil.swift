@@ -11,15 +11,15 @@ struct ImageSheetProfil: View {
     @Binding var selectedImage: String
     @Binding var showImageSheet : Bool
     
-    let availableImages = ["profil", "image1", "image2", "image3", "image4", "image5", "image6", "image7"] // Verfügbare Bilder
+    let availableImages = ["profil", "image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8"]
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
         VStack {
             Image(selectedImage)
                 .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100)
+                
+                .frame(width: 85, height: 85)
                 .cornerRadius(180)
            
             Text("Wähle ein Bild aus")
@@ -31,8 +31,8 @@ struct ImageSheetProfil: View {
                         ForEach(availableImages, id: \.self) { image in
                             Image(image)
                                 .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                                
+                                .frame(width: 85, height: 85)
                                 .cornerRadius(180)
                                 .onTapGesture {
                                     selectedImage = image

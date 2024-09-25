@@ -6,9 +6,8 @@
 //
 import SwiftUI
 
-
 struct SelectWeatherView: View {
-    @State private var selectedWeather: Set<Weather> = []
+    @Binding var selectedWeather: Set<Weather>
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -18,7 +17,8 @@ struct SelectWeatherView: View {
                         toggleSelection(weather)
                     }) {
                         Text(weather.rawValue)
-                            .font(.footnote)
+                            .font(.subheadline)
+                            .bold()
                             .padding(5)
                             .background(selectedWeather.contains(weather) ? Color.blue : Color.gray)
                             .foregroundColor(.white)
@@ -37,4 +37,9 @@ struct SelectWeatherView: View {
             selectedWeather.insert(weather)
         }
     }
+}
+
+#Preview {
+    @Previewable @State var selectedWeather: Set<Weather> = []
+    SelectWeatherView(selectedWeather: $selectedWeather)
 }

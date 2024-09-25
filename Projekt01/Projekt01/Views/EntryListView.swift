@@ -6,21 +6,25 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct EntryListView: View {
-    
+
     
     var body: some View {
         NavigationStack{
             VStack{
-            MoodEntryView()
+                MoodEntryView()
                 
             }
+           
         }
-            .navigationTitle("Einträge")
+        .navigationTitle("Einträge")
         .navigationBarTitleDisplayMode(.inline)
     }
+   
 }
+
 #Preview {
     EntryListView()
 }

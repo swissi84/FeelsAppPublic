@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import SwiftData
 
-
-enum Weather: String, CaseIterable, Identifiable {
-    case sunny = "Sonnig"
-    case rainy = "Regnerisch"
-    case cloudy = "Bewölkt"
-    case cold = "Kalt"
-    case snow = "Schnee"
-    case stormy = "Stürmisch"
-    case hot = "Heiss"
-    
+enum Weather: String, CaseIterable, Identifiable, Hashable {
+    case sunny = "☀️ Sonnig"
+    case rainy = "🌧 Regen"
+    case cloudy = "☁️ Wolkig"
+    case cold = "🥶 Kalt"
+    case snow = "❄️ Schnee"
+    case windy = "🌬 Windig"
+    case hot = "🥵 Heiss"
+   
     var id: String { self.rawValue }
+    
 }
 

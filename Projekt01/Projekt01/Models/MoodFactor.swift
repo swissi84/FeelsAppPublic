@@ -31,21 +31,26 @@
 //    
 
 import SwiftUI
+import SwiftData
 
+@Model
 class MoodFactor: Identifiable, Hashable {
-    let id = UUID() // Eindeutige ID für Identifizierbarkeit
+    var id: UUID = UUID()
     var titel: String
+    
+    var moodFactors: [MoodEntry] = []
     
     init(titel: String) {
         self.titel = titel
+        
     }
     
-    // Implementiere die Hashable-Anforderung
+  
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 
-    // Implementiere die Gleichheitsprüfung
+    
     static func == (lhs: MoodFactor, rhs: MoodFactor) -> Bool {
         return lhs.id == rhs.id
     }

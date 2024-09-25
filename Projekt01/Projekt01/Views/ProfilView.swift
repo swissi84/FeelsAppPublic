@@ -18,7 +18,7 @@ struct ProfilView: View {
     @State private var showImageSheet = false
     
     var body: some View {
-        NavigationStack {
+        
             VStack {
                 Image(selectedImage)
                     .resizable()
@@ -45,13 +45,14 @@ struct ProfilView: View {
                     Section(header: Text("Persönliche Einstellungen")) {
                         Toggle("Dark Mode", isOn: $darkmode)
                     }
-                }
-                .navigationTitle("Feels Profil")
+                    .navigationTitle("Einträge")
                 .navigationBarTitleDisplayMode(.inline)
+                }
+                
             }
         }
     }
-}
+
 
 
 

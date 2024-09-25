@@ -12,12 +12,13 @@ struct Projekt01App: App {
     @AppStorage("darkmode") private var darkmode = false
     @AppStorage("isUserLoggedIn") private var isUserLoggedIn = false
    
+   
     
     var body: some Scene {
         WindowGroup {
             if isUserLoggedIn {
                 TabView{
-                    ContentView()
+                    HomeView()
                         .preferredColorScheme(darkmode ? .dark : .light)
                     
                         .tabItem {
@@ -43,7 +44,9 @@ struct Projekt01App: App {
                 }
                 .modelContainer(for: [
                     MoodEntry.self,
-                    ])
+                    MoodFactor.self
+                    
+                ])
                 
             } else {
                 LoginView()

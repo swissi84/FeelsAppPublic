@@ -17,10 +17,10 @@ class User: Identifiable {
     var location: String
     var darkMode: Bool
     var profilImage: String
-    var moodEntries: [MoodEntry] = []
     
     
-    init(id: UUID, username: String, email: String, birthday: Date, location: String, darkMode: Bool, profilImage: String, moodEntries: [MoodEntry]) {
+    
+    init(id: UUID, username: String, email: String, birthday: Date, location: String, darkMode: Bool, profilImage: String) {
         self.id = id
         self.username = username
         self.email = email
@@ -28,7 +28,7 @@ class User: Identifiable {
         self.location = location
         self.darkMode = darkMode
         self.profilImage = profilImage
-        self.moodEntries = moodEntries
+        
     }
     
     
