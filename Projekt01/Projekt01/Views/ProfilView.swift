@@ -10,7 +10,7 @@ struct ProfilView: View {
     @AppStorage("birthday") var birthday = ""
     @AppStorage("location") var location = ""
     @AppStorage("darkmode") var darkmode = false
-    @AppStorage("selectedImage") var selectedImage: String = "cat"
+    @AppStorage("selectedImage") var selectedImage: String = "Man"
 
     @State private var showImageSheet = false
 
