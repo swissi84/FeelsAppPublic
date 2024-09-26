@@ -91,9 +91,9 @@
 		3AA466E52CA2B39000DD243C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A7BCBD72CA196350078816F /* LoginView.swift */,
 				3A7BCBDD2CA1990D0078816F /* ProfilView.swift */,
 				3A7BCBD92CA197020078816F /* ImageSheetProfile.swift */,
-				3A7BCBD72CA196350078816F /* LoginView.swift */,
 				3A2939CC2CA2B518004E5B7F /* AddMoodEntryView.swift */,
 				3AC0761F2CA2D37900807FB0 /* SelectWeatherView.swift */,
 				3AAB07DF2CA3DE4500DAD977 /* SelectMoodFactorView.swift */,

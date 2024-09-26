@@ -54,10 +54,17 @@ struct HomeView: View {
                 BackColor.backgroundColor4.ignoresSafeArea()
 
             VStack {
-                Text("Willkommen")
+                Text("")
+                    .padding(5)
+                Image("header")
+                    .resizable()
+                    .frame(width: 380, height: 150)
+                    .cornerRadius(10)
+                    
+               
+                Text("Willkommen \(username)")
                     .font(.title)
-                Text(username)
-                    .font(.title)
+               
 
                 Spacer()
                Text("Stimmungs Tendenz:")
@@ -74,11 +81,11 @@ struct HomeView: View {
                         .foregroundColor(Color.red)
                         .shadow(radius: 5, x: 5, y:  5)
                 }
-               Spacer()
+               
 
                Text("Stimmungen der letzten 7 Tage:")
                     .font(.system(size: 20))
-
+                    .padding()
                 Chart {
                     ForEach(averagePerDay, id: \.date) { moodEntry in
                         BarMark(
@@ -86,10 +93,13 @@ struct HomeView: View {
                             y: .value("Mood", moodEntry.mood)
                         )
                     }
+                    
                 }
-                .frame(width: 300, height: 300)
-                .padding(40)
+                .padding()
+                .frame(width: 300, height: 260)
+                .padding()
             }
+                
             }
 //            .onAppear {
 //

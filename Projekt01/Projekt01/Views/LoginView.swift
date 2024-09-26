@@ -12,32 +12,34 @@ struct LoginView: View {
     private var isUserLoggedIn = false
     
     var body: some View {
-        ZStack {
-            BackColor.backgroundColor4.ignoresSafeArea()
-            VStack {
-                
-                Image("header")
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(10)
-                if username.isEmpty {
-                    Text("Bitte gib deinen Namen zum Einloggen ein.")
-                } else {
-                    Text("Willkommen \(username) zu Feels")
-                }
-                TextField("beutzername", text: $username)
-                    .textFieldStyle(.roundedBorder)
-                    .padding()
-                
-                Button("Anmelden") {
+        VStack {
+            ZStack {
+                BackColor.backgroundColor4.ignoresSafeArea()
+                VStack {
+                    Image("header")
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(20)
+                    if username.isEmpty {
+                        Text("Bitte gib deinen Namen zum Einloggen ein.")
+                    } else {
+                        Text("Willkommen \(username) zu Feels")
+                    }
                     
-                    isUserLoggedIn = true
+                    TextField("Benutzername", text: $username)
+                        .textFieldStyle(.roundedBorder)
+                        .padding()
+                    
+                    Button("Anmelden") {
+                        
+                        isUserLoggedIn = true
+                    }
+                    .disabled(username.isEmpty)
                 }
-                .disabled(username.isEmpty)
+                .padding(25)
+                .fontWeight(.light)
             }
-            .padding()
-            .bold()
-            .monospaced()
+            Spacer()
         }
     }
 }
