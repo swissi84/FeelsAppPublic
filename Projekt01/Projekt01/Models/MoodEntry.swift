@@ -1,9 +1,5 @@
-//
-//  MoodEntry.swift
-//  Projekt01
-//
-//  Created by Eggenschwiler Andre on 23.09.24.
-//
+
+//  Created by Eggenschwiler Andre on 25.09.24.
 
 import Foundation
 import SwiftData
@@ -17,10 +13,10 @@ class MoodEntry: Identifiable {
     var moodPicture: String
     var selectedWeather: String
     var text: String
-    
+
     @Relationship(deleteRule: .nullify, inverse: \MoodFactor.moodFactors)
     var moodfactors: [MoodFactor]
-    
+
     init(titel: String, mood: Double, date: Date, moodPicture: String, selectedWeather: String, text: String, moodfactors: [MoodFactor]) {
         self.titel = titel
         self.mood = mood
@@ -30,7 +26,8 @@ class MoodEntry: Identifiable {
         self.text = text
         self.moodfactors = moodfactors
     }
-   
+
 }
+
 
 

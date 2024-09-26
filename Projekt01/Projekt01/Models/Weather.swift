@@ -1,9 +1,5 @@
-//
-//  enum.swift
-//  Projekt01
-//
-//  Created by Eggenschwiler Andre on 23.09.24.
-//
+
+//  Created by Eggenschwiler Andre on 25.09.24.
 
 import Foundation
 import SwiftData
@@ -16,8 +12,12 @@ enum Weather: String, CaseIterable, Identifiable, Hashable {
     case snow = "❄️ Schnee"
     case windy = "🌬 Windig"
     case hot = "🥵 Heiss"
-   
+
     var id: String { self.rawValue }
-    
+
 }
+
+
+
+
 

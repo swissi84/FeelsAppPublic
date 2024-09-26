@@ -1,9 +1,6 @@
-//
-//  SelectMoodFactorView.swift
-//  Projekt01
-//
-//  Created by Eggenschwiler Andre on 24.09.24.
-//
+
+//  Created by Eggenschwiler Andre on 25.09.24.
+
 import SwiftUI
 import SwiftData
 
@@ -29,12 +26,15 @@ struct SelectMoodFactorView: View {
                         toggleSelection(factor)
                     }) {
                         Text(factor.titel)
-                            .font(.subheadline)
+                            .font(.footnote)
                             .bold()
-                            .padding(5)
-                            .background(selectedMoodFactors.contains(factor) ? Color.blue : Color.gray)
+                            .padding(.horizontal,14)
+                            .padding(.bottom,6)
+                            .padding(.top,6)
+                            .background(selectedMoodFactors.contains(factor) ? Color.blue : Color.deepBrown)
                             .foregroundColor(.white)
-                            .cornerRadius(10)
+                            .clipShape(.capsule)
+                       
                     }
                 }
             }

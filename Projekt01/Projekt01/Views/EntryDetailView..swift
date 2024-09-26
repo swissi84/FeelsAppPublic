@@ -1,9 +1,4 @@
-//
-//  EntryDetailView.swift
-//  Projekt01
-//
-//  Created by Eggenschwiler Andre on 24.09.24.
-//
+//  Created by Eggenschwiler Andre on 25.09.24.
 
 import SwiftUI
 import SwiftData
@@ -14,7 +9,7 @@ struct EntryDetailView: View {
     var body: some View {
         NavigationStack{
             ScrollView {
-                VStack() {
+                VStack {
                     Text(moodEntry.titel)
                         .font(.largeTitle)
                         .padding()
@@ -29,7 +24,7 @@ struct EntryDetailView: View {
                                 .padding(1)
                         }
                     }
-                    .padding(.bottom)
+                    
                     
                     HStack {
                         ForEach(Weather.allCases) { weather in
@@ -44,36 +39,39 @@ struct EntryDetailView: View {
                             }
                         }
                     }
-                    .padding(.bottom)
-                    
-                    Text(moodEntry.moodPicture)
-                        .font(.system(size: 50))
-                        .padding()
-                    
-                    Text("Stimmung: \(String(format: "%.0f", moodEntry.mood))")
-                        .font(.headline)
-                        .padding()
-                    
-                    if !moodEntry.text.isEmpty {
-                        Text(moodEntry.text)
-                            .padding()
-                            .background(Color.gray.opacity(0.2))
-                            .cornerRadius(5)
-                            .padding(.bottom)
+                    VStack{
+                       
+                            Text(moodEntry.text)
+                                .padding()
+                                .background(Color.gray.opacity(0.2))
+                                .cornerRadius(5)
+                                
+                        }
+                    .padding(.vertical, 50)
+                        VStack {
+                            
+                            Text(moodEntry.moodPicture)
+                                .font(.system(size: 30))
+                            
+                            Text("Stimmung: \(String(format: "%.0f", moodEntry.mood))")
+                                .font(.headline)
+                        }
+                       
+                        .padding(.vertical, 50)
+                        
+                        VStack{
+                                
+                                Text("Datum: \(moodEntry.date.formatted(.dateTime.year().month().day()))")
+                        }
                     }
-                    
-                    Spacer()
-                    
-                    Text("Datum: \(moodEntry.date.formatted(.dateTime.year().month().day()))")
-                        .padding()
                 }
-                .padding()
+                    .padding()
             }
             .navigationTitle("Detailansicht")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-}
+
 #Preview {
     EntryDetailView(
         moodEntry: MoodEntry(
@@ -88,6 +86,3 @@ struct EntryDetailView: View {
     )
 }
 
-
-
-    

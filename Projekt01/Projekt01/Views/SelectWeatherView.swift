@@ -1,15 +1,13 @@
-//
-//  MultiSelectWeatherView.swift
-//  Projekt01
-//
-//  Created by Eggenschwiler Andre on 24.09.24.
-//
+
+//  Created by Eggenschwiler Andre on 25.09.24.
+
 import SwiftUI
 
 struct SelectWeatherView: View {
     @Binding var selectedWeather: Set<Weather>
 
     var body: some View {
+
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(Weather.allCases) { weather in
@@ -17,19 +15,22 @@ struct SelectWeatherView: View {
                         toggleSelection(weather)
                     }) {
                         Text(weather.rawValue)
-                            .font(.subheadline)
+                            .font(.footnote)
                             .bold()
-                            .padding(5)
-                            .background(selectedWeather.contains(weather) ? Color.blue : Color.gray)
+                            .padding(.horizontal,14)
+                            .padding(.bottom,6)
+                            .padding(.top,6)
+                            .background(selectedWeather.contains(weather) ? Color.blue : Color.navyBlue)
                             .foregroundColor(.white)
-                            .cornerRadius(10)
+                            .clipShape(.capsule)
+
                     }
                 }
             }
             .padding()
         }
     }
-    
+
     private func toggleSelection(_ weather: Weather) {
         if selectedWeather.contains(weather) {
             selectedWeather.remove(weather)
@@ -38,6 +39,10 @@ struct SelectWeatherView: View {
         }
     }
 }
+
+
+
+
 
 #Preview {
     @Previewable @State var selectedWeather: Set<Weather> = []
