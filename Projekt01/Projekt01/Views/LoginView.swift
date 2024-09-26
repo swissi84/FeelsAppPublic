@@ -12,10 +12,10 @@ struct LoginView: View {
     private var isUserLoggedIn = false
     
     var body: some View {
+        ZStack {
+            BackColor.backgroundColor4.ignoresSafeArea()
         VStack {
-            ZStack {
-                BackColor.backgroundColor4.ignoresSafeArea()
-                VStack {
+            VStack {
                     Image("header")
                         .resizable()
                         .scaledToFit()
@@ -39,7 +39,7 @@ struct LoginView: View {
                 .padding(25)
                 .fontWeight(.light)
             }
-            Spacer()
+            
         }
     }
 }
