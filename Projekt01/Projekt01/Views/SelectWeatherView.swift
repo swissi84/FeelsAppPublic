@@ -34,7 +34,7 @@ struct SelectWeatherView: View {
     private func toggleSelection(_ weather: Weather) {
         if selectedWeather.contains(weather) {
             selectedWeather.remove(weather)
-        } else {
+        } else if selectedWeather.count < 3 {
             selectedWeather.insert(weather)
         }
     }

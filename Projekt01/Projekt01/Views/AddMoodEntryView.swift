@@ -38,7 +38,7 @@ struct AddMoodEntryView: View {
                         .fontWeight(.light)
 
                     VStack{
-                        TextField("", text: $title)
+                        TextField("Text..", text: $title)
                             .padding(10)
                             .background(Color.white.opacity(0.6))
                             .cornerRadius(16)
@@ -140,7 +140,7 @@ struct AddMoodEntryView: View {
 
                         Text("Für was bist du gerade dankbar?")
                         ZStack{
-                            TextField("Title", text: $text, axis: .vertical)
+                            TextField("Text...", text: $text, axis: .vertical)
                                 .lineLimit(3...7)
                                 .padding()
                                 .background(Color.white.opacity(0.6))
@@ -163,7 +163,7 @@ struct AddMoodEntryView: View {
                                 alert = true
                                 let weatherString = selectedWeather.map { $0.rawValue }.joined(separator: ", ")
 
-                                let moodFactorsArray = Array(selectedMoodFactors)
+                                let moodFactors = Array(selectedMoodFactors)
 
                                 let newEntry = MoodEntry(
                                     titel: title,
@@ -172,7 +172,7 @@ struct AddMoodEntryView: View {
                                     moodPicture: selectedEmoji,
                                     selectedWeather: weatherString,
                                     text: text,
-                                    moodfactors: moodFactorsArray
+                                    moodfactors: moodFactors
                                 )
 
                                 context.insert(newEntry)

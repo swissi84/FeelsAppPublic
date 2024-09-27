@@ -45,7 +45,7 @@ struct SelectMoodFactorView: View {
     private func toggleSelection(_ factor: MoodFactor) {
         if selectedMoodFactors.contains(factor) {
             selectedMoodFactors.remove(factor)
-        } else {
+        } else if selectedMoodFactors.count < 3 {
             selectedMoodFactors.insert(factor)
         }
     }

@@ -4,12 +4,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    
-    @AppStorage("username")
-    private var username: String = ""
-    
-    @AppStorage("isUserLoggedIn")
-    private var isUserLoggedIn = false
+    @AppStorage("username") var username = ""
+    @AppStorage("isUserLoggedIn") var isUserLoggedIn = false
     
     var body: some View {
         ZStack {

@@ -51,19 +51,18 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack{
-                BackColor.backgroundColor4.ignoresSafeArea()
+               BackColor.backgroundColor4.ignoresSafeArea()
 
             VStack {
                 Text("")
                     .padding(5)
                 Image("header")
                     .resizable()
-                    .frame(width: 380, height: 150)
+                    .frame(width: 380, height: 220)
                     .cornerRadius(10)
                     
                
-                Text("Willkommen \(username)")
-                    .font(.title)
+              
                
 
                 Spacer()
