@@ -4,7 +4,7 @@
 import SwiftUI
 
 extension Color {
-    static let deepBrown = Color(red: 0.5, green: 0.3, blue: 0.3)
+  static let deepBrown = Color(red: 0.5, green: 0.3, blue: 0.3)
   static let deepRed = Color(red: 0.8, green: 0.1, blue: 0.1)
   static let mintGreen = Color(red: 0.6, green: 0.9, blue: 0.6)
   static let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)

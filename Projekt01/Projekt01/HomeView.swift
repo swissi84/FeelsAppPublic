@@ -61,12 +61,9 @@ struct HomeView: View {
                     .frame(width: 380, height: 220)
                     .cornerRadius(10)
                     
-               
+               Spacer()
               
-               
-
-                Spacer()
-               Text("Stimmungs Tendenz:")
+                Text("Stimmungs Tendenz:")
                     .padding()
                     .font(.system(size: 20))
                 if averageMood > 5.0 {
